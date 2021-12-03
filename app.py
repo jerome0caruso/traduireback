@@ -78,7 +78,7 @@ def signup():
     db.session.add(new_user) 
     db.session.commit()
   
-    return 'You like that?'
+    return {"registered": "True"}
     
 @app.route('/cards', methods=['POST'])
 # @login_required
